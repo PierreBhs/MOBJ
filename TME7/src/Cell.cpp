@@ -224,7 +224,7 @@ namespace Netlist {
     }
     stream << --indent << "</nets>\n";
 
-    //symbol_.toXml( stream );  // TME7
+    symbol_.toXml( stream );  // TME7
 
     stream << --indent << "</cell>\n";
   }
@@ -328,7 +328,7 @@ namespace Netlist {
           break;
         case BeginSymbol:  // TME7
           if ( (nodeName == symbolTag) and (xmlTextReaderNodeType(reader) == XML_READER_TYPE_ELEMENT) ) {
-            if (true/* Symbol::fromXml(cell,reader)*/) {
+            if (Symbol::fromXml(cell,reader)) {
               state = EndCell;
               continue;
             }

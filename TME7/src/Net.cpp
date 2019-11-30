@@ -109,6 +109,7 @@ void Net::toXml(std::ostream& o) {
 
 Net* Net::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 	const xmlChar* netTag   = xmlTextReaderConstString(reader, (const xmlChar*)"net");
+	const xmlChar* lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"line" );
 	const xmlChar* nodeTag  = xmlTextReaderConstString(reader, (const xmlChar*)"node");
 	const xmlChar* nodeName = xmlTextReaderConstLocalName(reader);
 	int            nodeType = xmlTextReaderNodeType(reader);
@@ -119,7 +120,7 @@ Net* Net::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 	Net* net;
 	std::string name;
 	Term::Type t;
-
+ 
 	if(nodeName == netTag && nodeType == XML_READER_TYPE_ELEMENT) { // <net>
 		name = xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"name"));
 		t    = Term::toType(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"type")));
@@ -148,7 +149,12 @@ Net* Net::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 				case Init:
 					if(nodeName == netTag && nodeType == XML_READER_TYPE_END_ELEMENT) { // </net>
 						return net;
-					} 
+					}
+
+					else if (nodeName == lineTag) {
+             	 		if (Line::fromXml(net, reader))
+							continue; 
+					}
 
 					else if(nodeName == nodeTag && nodeType == XML_READER_TYPE_ELEMENT) { // <node>
 						if(Node::fromXml(net, reader)) {
@@ -158,6 +164,7 @@ Net* Net::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 
 					else { 
 						std::cout << "No tag found\n";
+						std::cout << nodeName << std::endl;
 						break;
 					}
 				default:

@@ -45,6 +45,7 @@ find_package(LibXml2)
                                       Symbol.cpp
                                       Line.cpp
                                       Shape.cpp
+                                      ShapeXML.cpp
                        )
 
         add_executable ( tme7        ${cpps} )

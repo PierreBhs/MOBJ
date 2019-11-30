@@ -6,7 +6,6 @@
 #include  <vector>
 #include  "Box.h"
 
-
 namespace Netlist {
 
   class Term;
