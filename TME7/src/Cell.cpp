@@ -49,7 +49,7 @@ namespace Netlist {
 
   void  Cell::save ( const std::string& name ) const
   {
-    string  fileName = (name.empty()) ? getName() + ".xml" : name + ".xml";
+    string  fileName = (name.empty()) ? getName() + ".xml" : "../work/" + name + ".xml";
     fstream fstream ( fileName.c_str(), ios_base::out|ios_base::trunc );
     if (not fstream.good()) {
       cerr << "[ERROR] Cell::save() unable to open file <" << fileName << ">." << endl;

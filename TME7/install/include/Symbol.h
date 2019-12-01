@@ -1,10 +1,11 @@
 #ifndef NETLIST_SYMBOL_H
 #define NETLIST_SYMBOL_H
 
-#include  <libxml/xmlreader.h>
-#include  <string>
-#include  <vector>
-#include  "Box.h"
+#include <libxml/xmlreader.h>
+#include <string>
+#include <vector>
+#include <ostream>
+#include "Box.h"
 
 namespace Netlist {
 
@@ -41,4 +42,4 @@ namespace Netlist {
 
 }  // Netlist namespace.
 
-#endif  // NETLIST_SYMBOL_H
+#endif  // NETLIST_SYMBOL_H 

@@ -20,8 +20,9 @@ Net::~Net() {
     	dynamic_cast<NodeTerm*>((*node))->getTerm()->setNet(nullptr);
     }
 
-    while (!nodes_.empty())
+    while (!nodes_.empty()) {
     	nodes_.pop_back();
+	}
 
 	owner_->remove(this);
 }
@@ -90,6 +91,8 @@ bool  Net::remove ( Line* line ) {
 
 Node* Net::getNode(size_t id) const {
 	for(auto n : nodes_) {
+		if(!n)
+			continue;
 		if(n->getId() == id)
 			return n;
 	}
@@ -102,6 +105,11 @@ void Net::toXml(std::ostream& o) {
 	for(auto node: getNodes()) {
 		if(node != nullptr)
 			node->toXml(o);
+	}
+
+	for(auto line: getLines()) {
+		if(line)
+			line->toXml(o);
 	}
 	indent--;
 	o << indent << "</net>\n";

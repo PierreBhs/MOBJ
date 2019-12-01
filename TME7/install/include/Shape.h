@@ -19,6 +19,7 @@ public:
     virtual          ~Shape           ();
     inline   Symbol* getSymbol        ()  const;
     virtual  Box     getBoundingBox   ()  const = 0;
+    virtual  void    toXml            (std::ostream&) = 0;
     static   Shape*  fromXml(Symbol*, xmlTextReaderPtr);
     
 private:
@@ -53,6 +54,7 @@ public:
             Box         getBoundingBox   () const;
     inline  Term*       getTerm          () const;
     inline  int         getX             () const;
+    inline  int         getY             () const;
     static  std::string alignToString    (NameAlign);
     static  NameAlign   stringToAlign    (std::string);
             void        toXml            (std::ostream&);
@@ -64,6 +66,9 @@ private:
 };
 
 inline Term*     TermShape::getTerm          () const { return term_; }
+inline  int      TermShape::getX             () const { return x_; }
+inline  int      TermShape::getY             () const { return y_; }
+
 
 ///////// LineShape /////////
 class LineShape : public Shape {
@@ -108,9 +113,14 @@ private:
 
 class ArcShape : public Shape {
 public:
-    static Shape*    fromXml          ( Symbol*, xmlTextReaderPtr);
+                     ArcShape         (Symbol*, int, int, int , int, int, int);
+    void             toXml            (std::ostream&);          
+    static ArcShape* fromXml          ( Symbol*, xmlTextReaderPtr);
     Box              getBoundingBox   ()  const;
 private:
+    Box box_;
+    int start_;
+    int span_;
 
 };
 

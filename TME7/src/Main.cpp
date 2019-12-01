@@ -20,14 +20,14 @@ int main ( int argc, char* argv[] )
   Cell::load( "TransistorP" );
   Cell::load( "and2" );
   Cell::load( "or2" );
-  /* Cell* xor2      = Cell::load( "xor2" );
+  Cell* xor2      = Cell::load( "xor2" );
   Cell* halfadder = Cell::load( "halfadder" );
 
   cout << "\nContenu du <xor2>:" << endl;
   xor2->toXml( cout );
 
   cout << "\nContenu du <halfadder>:" << endl;
-  halfadder->toXml( cout ); */
-
+  halfadder->toXml( cout );
+  halfadder->save("halfadder");
   return 0;
 }

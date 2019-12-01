@@ -10,7 +10,7 @@ Shape* Shape::fromXml ( Symbol* owner, xmlTextReaderPtr reader ) {
     // Factory-like method.
     const xmlChar* boxTag      = xmlTextReaderConstString( reader, (const xmlChar*)"box" );
     const xmlChar* ellipseTag  = xmlTextReaderConstString( reader, (const xmlChar*)"ellipse" );
-    //const xmlChar* arcTag      = xmlTextReaderConstString( reader, (const xmlChar*)"arc" );
+    const xmlChar* arcTag      = xmlTextReaderConstString( reader, (const xmlChar*)"arc" );
     const xmlChar* lineTag     = xmlTextReaderConstString( reader, (const xmlChar*)"line" );
     const xmlChar* termTag     = xmlTextReaderConstString( reader, (const xmlChar*)"term" );
     const xmlChar* nodeName    = xmlTextReaderConstLocalName( reader );
@@ -20,8 +20,8 @@ Shape* Shape::fromXml ( Symbol* owner, xmlTextReaderPtr reader ) {
         shape = BoxShape::fromXml( owner, reader );
     if (ellipseTag == nodeName)
         shape = EllipseShape::fromXml( owner, reader );
-    //if (arcTag == nodeName)
-    //    shape = ArcShape::fromXml( owner, reader );
+    if (arcTag == nodeName)
+        shape = ArcShape::fromXml( owner, reader );
     if (lineTag == nodeName)
         shape = LineShape::fromXml( owner, reader );
     if (termTag == nodeName)
@@ -91,7 +91,7 @@ TermShape* TermShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
 }
 
 void TermShape::toXml(std::ostream& o) {
-    o << indent << "<term name=" << term_->getName() << "\" x1=\"" << x_ <<"\" y1=\"" << y_ << "\" align=" << alignToString(align_) << "\"/>\n";
+    o << indent << "<term name=\"" << term_->getName() << "\" x1=\"" << x_ <<"\" y1=\"" << y_ << "\" align=\"" << alignToString(align_) << "\"/>\n";
 }
 
 
@@ -119,7 +119,7 @@ LineShape* LineShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
 }
 
 void LineShape::toXml(std::ostream& o) {
-    o << indent << "<box x1=\"" << x1_ << "\" y1=\"" << y1_ << "\" x2=\"" << x2_ << "\" y2=\"" << y2_ <<"\"/>\n";
+    o << indent << "<line x1=\"" << x1_ << "\" y1=\"" << y1_ << "\" x2=\"" << x2_ << "\" y2=\"" << y2_ <<"\"/>\n";
 }
 
 
@@ -151,5 +151,34 @@ void EllipseShape::toXml(std::ostream& o) {
      o << indent << "<ellipse x1=\"" << box_.getX1() << "\" y1=\"" << box_.getY1() << "\" x2=\"" << box_.getX2() << "\" y2=\"" << box_.getY2() <<"\"/>\n";
 }
 
+
+/////////////////////////
+///    ArchShape   ///
+/////////////////////////
+
+void ArcShape::toXml(std::ostream& o) {
+     o << indent << "<arc x1=\"" << box_.getX1() << "\" y1=\"" << box_.getY1() << "\" x2=\"" << box_.getX2() << "\" y2=\"" << box_.getY2() << "\" start=\"" << start_ << "\" span=\"" << span_ <<"\"/>\n";
+}
+
+ArcShape* ArcShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
+    const xmlChar*  lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"ellipse");
+    const xmlChar*  nodeName = xmlTextReaderConstLocalName(reader);
+    int             nodeType = xmlTextReaderNodeType(reader);
+
+    int x1, y1, x2, y2, start, span;
+
+    if(nodeName == lineTag && nodeType == XML_READER_TYPE_ELEMENT) {
+        x1        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"x1")).c_str());
+        y1        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"y1")).c_str());
+        x2        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"x2")).c_str());
+        y2        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"y2")).c_str());
+        start        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"start")).c_str());
+        span        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"span")).c_str());
+
+        return new ArcShape(owner, x1, y1, x2, y2, start, span);
+    } 
+    else
+        return nullptr;
+}
 
 }

@@ -16,7 +16,7 @@ namespace Netlist {
     source_->attach( this );
     target_->attach( this );
   }
-
+ 
 
   Line::~Line ()
   {
@@ -28,7 +28,7 @@ namespace Netlist {
 
   void  Line::toXml ( ostream& stream ) const
   {
-    stream << indent << "<Line source=\"" << source_->getId()
+    stream << indent << "<line source=\"" << source_->getId()
                      <<    "\" target=\"" << target_->getId() << "\"/>\n";
   }
 

@@ -104,5 +104,14 @@ Box EllipseShape::getBoundingBox () const {
     return  box_; 
 }
 
+////// ArcShape ///////
+ArcShape::ArcShape(Symbol* symbol, int x1, int y1, int x2, int y2, int start, int span) :
+                  Shape(symbol), box_(x1, y1, x2, y2), start_(start), span_(span) {
+
+}
+
+Box ArcShape::getBoundingBox () const {
+    return  box_; 
+}
 
 }

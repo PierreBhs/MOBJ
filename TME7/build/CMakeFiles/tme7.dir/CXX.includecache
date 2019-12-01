@@ -209,6 +209,8 @@ Term.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
 
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.cpp
+libxml/xmlreader.h
+-
 Symbol.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
 Shape.h
@@ -220,6 +222,8 @@ libxml/xmlreader.h
 string
 -
 vector
+-
+ostream
 -
 Box.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.h
