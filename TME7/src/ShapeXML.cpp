@@ -99,6 +99,7 @@ void TermShape::toXml(std::ostream& o) {
 //////////////////////
 ///    LineShape   ///
 //////////////////////
+
 LineShape* LineShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
     const xmlChar*  lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"line");
     const xmlChar*  nodeName = xmlTextReaderConstLocalName(reader);
@@ -172,8 +173,8 @@ ArcShape* ArcShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
         y1        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"y1")).c_str());
         x2        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"x2")).c_str());
         y2        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"y2")).c_str());
-        start        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"start")).c_str());
-        span        = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"span")).c_str());
+        start     = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"start")).c_str());
+        span      = atoi(xmlCharToString(xmlTextReaderGetAttribute(reader, (const xmlChar*)"span")).c_str());
 
         return new ArcShape(owner, x1, y1, x2, y2, start, span);
     } 

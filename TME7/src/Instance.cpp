@@ -2,6 +2,7 @@
 #include "Cell.h"
 #include "Term.h"
 #include "Net.h"
+#include "Shape.h"
 #include <vector>
 namespace Netlist {
 
@@ -64,6 +65,17 @@ void  Instance::setPosition(const Point& p){
 void  Instance::setPosition(int x, int y){
     position_.setX(x);
     position_.setY(y); 
+
+    for(auto& shape : getMasterCell()->getSymbol()->getShapes()) { 
+            TermShape* termShape = dynamic_cast<TermShape*>(shape);
+            if (termShape) {                                              
+                std::string name = termShape->getTerm()->getName();       
+                for(auto& termInst : getTerms()) {                      
+                    if(name == termInst->getName())                          
+                        termInst->setPosition(termShape->getX() + x , termShape->getY() + y);               
+                }
+            }
+        }
 }
 
 void Instance::toXml(std::ostream& o) {
