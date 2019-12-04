@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Box.cpp
 Box.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Box.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Box.h
 iostream
 -
 algorithm
 -
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.cpp
 cstdlib
 -
 fstream
 -
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Instance.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 libxml/xmlreader.h
 -
 string
@@ -42,35 +42,35 @@ string
 vector
 -
 Indentation.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.h
 Symbol.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.cpp
 Indentation.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.h
 string
 -
 iostream
 -
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.cpp
 Instance.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Shape.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.h
 vector
 -
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 iostream
 -
 string
@@ -78,21 +78,21 @@ string
 vector
 -
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Line.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Line.cpp
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 Line.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Line.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Line.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Line.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Line.h
 iostream
 -
 vector
@@ -100,11 +100,11 @@ vector
 libxml/xmlreader.h
 -
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 Node.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Main.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Main.cpp
 string
 -
 sstream
@@ -114,23 +114,23 @@ iostream
 memory
 -
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Instance.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.cpp
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 string
 -
 vector
@@ -138,31 +138,31 @@ vector
 ostream
 -
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 Line.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Line.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Line.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.cpp
 limits
 -
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 Node.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.h
 Line.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Line.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Line.h
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Instance.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.h
 iostream
 -
 vector
@@ -170,55 +170,55 @@ vector
 libxml/xmlreader.h
 -
 Indentation.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.h
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.cpp
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 iostream
 -
 Indentation.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Indentation.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Indentation.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.cpp
 Shape.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.h
 Symbol.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.h
 libxml/xmlreader.h
 -
 Box.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Box.h
 Symbol.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 ostream
 -
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/ShapeXML.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/ShapeXML.cpp
 Shape.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.h
 Symbol.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.cpp
 libxml/xmlreader.h
 -
 Symbol.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 Shape.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Shape.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Shape.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Symbol.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Symbol.h
 libxml/xmlreader.h
 -
 string
@@ -228,43 +228,43 @@ vector
 ostream
 -
 Box.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Box.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Box.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.cpp
 Term.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 Node.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.h
 Cell.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Cell.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Cell.h
 Net.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Net.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Net.h
 Instance.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Instance.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Instance.h
 Point.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Point.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Point.h
 string
 -
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Term.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Term.h
 string
 -
 ostream
 -
 Node.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/Node.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/Node.h
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.cpp
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.cpp
 XmlUtil.h
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 cstdlib
 -
 iostream
 -
 
-/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME7/src/XmlUtil.h
+/users/enseig/boeshertz/MOBJ/MOBJ/TME7/src/XmlUtil.h
 libxml/xmlreader.h
 -
 string
