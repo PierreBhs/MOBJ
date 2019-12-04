@@ -22,7 +22,6 @@ Shape* Shape::fromXml ( Symbol* owner, xmlTextReaderPtr reader ) {
         shape = EllipseShape::fromXml( owner, reader );
     if (arcTag == nodeName) {
         shape = ArcShape::fromXml( owner, reader );
-        std::cout << "ici\n";
     }
     if (lineTag == nodeName)
         shape = LineShape::fromXml( owner, reader );
