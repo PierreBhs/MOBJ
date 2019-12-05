@@ -110,6 +110,10 @@ ArcShape::ArcShape(Symbol* symbol, int x1, int y1, int x2, int y2, int start, in
 
 }
 
+ArcShape::~ArcShape() {
+  
+}
+
 Box ArcShape::getBoundingBox () const {
     return  box_; 
 }

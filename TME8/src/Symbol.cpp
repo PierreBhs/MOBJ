@@ -68,14 +68,14 @@ void Symbol::toXml(std::ostream& stream) const {
 }
 
 Symbol* Symbol::fromXml(Cell* cell, xmlTextReaderPtr reader) {
-    const xmlChar* symbolTag   = xmlTextReaderConstString(reader, (const xmlChar*)"symbol");
-	const xmlChar* boxTag   = xmlTextReaderConstString(reader, (const xmlChar*)"box");
+    const xmlChar* symbolTag = xmlTextReaderConstString(reader, (const xmlChar*)"symbol");
+	const xmlChar* boxTag    = xmlTextReaderConstString(reader, (const xmlChar*)"box");
     const xmlChar* termTag   = xmlTextReaderConstString(reader, (const xmlChar*)"term");
-	const xmlChar* lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"line" );
-	const xmlChar* elliTag  = xmlTextReaderConstString(reader, (const xmlChar*)"ellipse");
-	const xmlChar* arcTag  = xmlTextReaderConstString(reader, (const xmlChar*)"arc");
-	const xmlChar* nodeName = xmlTextReaderConstLocalName(reader);
-	int            nodeType = xmlTextReaderNodeType(reader);
+	const xmlChar* lineTag   = xmlTextReaderConstString(reader, (const xmlChar*)"line" );
+	const xmlChar* elliTag   = xmlTextReaderConstString(reader, (const xmlChar*)"ellipse");
+	const xmlChar* arcTag    = xmlTextReaderConstString(reader, (const xmlChar*)"arc");
+	const xmlChar* nodeName  = xmlTextReaderConstLocalName(reader);
+	int            nodeType  = xmlTextReaderNodeType(reader);
 
 	enum  State { Init };
 	State state = Init;
@@ -105,6 +105,7 @@ Symbol* Symbol::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 			nodeType = xmlTextReaderNodeType(reader);
 
 			switch(state) {
+				
 				case Init:
 					if(nodeName == symbolTag && nodeType == XML_READER_TYPE_END_ELEMENT) { // </symbol>
 						return sym;
@@ -125,11 +126,13 @@ Symbol* Symbol::fromXml(Cell* cell, xmlTextReaderPtr reader) {
 					else if(nodeName == lineTag) {
              	 		if (LineShape::fromXml(sym, reader))
 							continue; 
+						  
 					}
 
 					else if(nodeName == arcTag) {
-             	 		if (ArcShape::fromXml(sym, reader))
+             	 		if (ArcShape::fromXml(sym, reader)) {
 							continue; 
+						  }
 					}
 
 					else if(nodeName == elliTag && nodeType == XML_READER_TYPE_ELEMENT) { 

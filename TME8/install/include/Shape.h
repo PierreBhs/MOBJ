@@ -114,6 +114,7 @@ private:
 class ArcShape : public Shape {
 public:
                      ArcShape         (Symbol*, int, int, int , int, int, int);
+                     ~ArcShape        ();
     void             toXml            (std::ostream&);          
     static ArcShape* fromXml          ( Symbol*, xmlTextReaderPtr);
     Box              getBoundingBox   ()  const;

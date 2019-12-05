@@ -1,21 +1,26 @@
 Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
+Change Dir: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/gmake "cmTryCompileExec175003973/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec175003973.dir/build.make CMakeFiles/cmTryCompileExec175003973.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec175003973.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec175003973.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_WIN’ was not declared in this scope
+Run Build Command:"/usr/bin/make" "cmTC_b950c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b950c.dir/build.make CMakeFiles/cmTC_b950c.dir/build
+make[1]: Entering directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b950c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4  -std=c++11 -Wall -g    -o CMakeFiles/cmTC_b950c.dir/CheckSymbolExists.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
    return ((int*)(&Q_WS_WIN))[argc];
-                   ^
-gmake[1]: *** [CMakeFiles/cmTryCompileExec175003973.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake: *** [cmTryCompileExec175003973/fast] Erreur 2
+                   ^~~~~~~~
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_b950c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b950c.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_b950c.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b950c/fast' failed
+make: *** [cmTC_b950c/fast] Error 2
 
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -31,23 +36,28 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
+Change Dir: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/gmake "cmTryCompileExec743693290/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec743693290.dir/build.make CMakeFiles/cmTryCompileExec743693290.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec743693290.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec743693290.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_QWS’ was not declared in this scope
+Run Build Command:"/usr/bin/make" "cmTC_c3004/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3004.dir/build.make CMakeFiles/cmTC_c3004.dir/build
+make[1]: Entering directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3004.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4  -std=c++11 -Wall -g    -o CMakeFiles/cmTC_c3004.dir/CheckSymbolExists.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
    return ((int*)(&Q_WS_QWS))[argc];
-                   ^
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake[1]: *** [CMakeFiles/cmTryCompileExec743693290.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake: *** [cmTryCompileExec743693290/fast] Erreur 2
+                   ^~~~~~~~
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_c3004.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c3004.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_c3004.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3004/fast' failed
+make: *** [cmTC_c3004/fast] Error 2
 
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -63,119 +73,28 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
+Change Dir: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/gmake "cmTryCompileExec4155498063/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec4155498063.dir/build.make CMakeFiles/cmTryCompileExec4155498063.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec4155498063.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec4155498063.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_MAC’ was not declared in this scope
+Run Build Command:"/usr/bin/make" "cmTC_ce4f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce4f7.dir/build.make CMakeFiles/cmTC_ce4f7.dir/build
+make[1]: Entering directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce4f7.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4  -std=c++11 -Wall -g    -o CMakeFiles/cmTC_ce4f7.dir/CheckSymbolExists.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
    return ((int*)(&Q_WS_MAC))[argc];
-                   ^
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake[1]: *** [CMakeFiles/cmTryCompileExec4155498063.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake: *** [cmTryCompileExec4155498063/fast] Erreur 2
-
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_MAC
-  return ((int*)(&Q_WS_MAC))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/gmake "cmTryCompileExec91133491/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec91133491.dir/build.make CMakeFiles/cmTryCompileExec91133491.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec91133491.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec91133491.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_WIN’ was not declared in this scope
-   return ((int*)(&Q_WS_WIN))[argc];
-                   ^
-gmake[1]: *** [CMakeFiles/cmTryCompileExec91133491.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake: *** [cmTryCompileExec91133491/fast] Erreur 2
-
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_WIN
-  return ((int*)(&Q_WS_WIN))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/gmake "cmTryCompileExec368787575/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec368787575.dir/build.make CMakeFiles/cmTryCompileExec368787575.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec368787575.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec368787575.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_QWS’ was not declared in this scope
-   return ((int*)(&Q_WS_QWS))[argc];
-                   ^
-gmake[1]: *** [CMakeFiles/cmTryCompileExec368787575.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake: *** [cmTryCompileExec368787575/fast] Erreur 2
-
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_QWS
-  return ((int*)(&Q_WS_QWS))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/gmake "cmTryCompileExec894701133/fast"
-/usr/bin/gmake -f CMakeFiles/cmTryCompileExec894701133.dir/build.make CMakeFiles/cmTryCompileExec894701133.dir/build
-gmake[1] : on entre dans le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec894701133.dir/CheckSymbolExists.cxx.o
-/usr/lib64/ccache/c++    -std=c++11 -Wall -g    -o CMakeFiles/cmTryCompileExec894701133.dir/CheckSymbolExists.cxx.o -c /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: erreur: ‘Q_WS_MAC’ was not declared in this scope
+                   ^~~~~~~~
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
    return ((int*)(&Q_WS_MAC))[argc];
-                   ^
-gmake[1] : on quitte le répertoire « /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp »
-gmake[1]: *** [CMakeFiles/cmTryCompileExec894701133.dir/CheckSymbolExists.cxx.o] Erreur 1
-gmake: *** [cmTryCompileExec894701133/fast] Erreur 2
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_ce4f7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ce4f7.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ce4f7.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ce4f7/fast' failed
+make: *** [cmTC_ce4f7/fast] Error 2
 
-File /users/enseig/boeshertz/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 

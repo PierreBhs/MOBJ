@@ -53,6 +53,8 @@
         "memory_resource": "cpp",
         "optional": "cpp",
         "string_view": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "iterator": "cpp",
+        "map": "cpp"
     }
 }

@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "moc_SaveCellDialog.cxx"
   "moc_CellWidget.cxx"
   "moc_CellViewer.cxx"
@@ -27,11 +27,9 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o"
   "tme810.pdb"
   "tme810"
-  "tme810.pdb"
-  "CMakeFiles/CMakeRelink.dir/tme810"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/tme810.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/tme810.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

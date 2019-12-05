@@ -3,7 +3,7 @@
 
 using namespace Netlist;
 
-CellViewer::CellViewer( QWidget * parent ): QMainWindow(parent), cellWidget_(NULL), saveCellDialog_(NULL) {
+CellViewer::CellViewer( QWidget * parent ): QMainWindow(parent), cellWidget_(NULL), saveCellDialog_(NULL), cells_() {
     cellWidget_     = new CellWidget();
     saveCellDialog_ = new SaveCellDialog(this);
     openCellDialog_ = new OpenCellDialog(this);
@@ -49,11 +49,12 @@ void  CellViewer::setCell(Cell* c) {
 
 void  CellViewer::openCell() {
     std::string cellStr;
+    Cell* cell;
     if (openCellDialog_->run(cellStr)) {
-        std::cout << cellStr << "\n";
-        Cell* cell = Cell::load(cellStr);
-        this->setCell(cell);
-        cell->toXml(std::cout);
+        if(!(cell = Cell::find(cellStr)))
+            cell = Cell::load(cellStr);
+
+        this->setCell(cell);     
     }
 }
 

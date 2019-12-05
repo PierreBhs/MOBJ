@@ -25,5 +25,6 @@ class CellViewer : public QMainWindow {
     //InstancesWidget* instancesWidget_;  // TME9+.
     SaveCellDialog*  saveCellDialog_;
     OpenCellDialog*  openCellDialog_;
+    std::vector<Cell*> cells_;
 };
 

@@ -25,6 +25,7 @@ Shape* Shape::fromXml ( Symbol* owner, xmlTextReaderPtr reader ) {
     }
     if (lineTag == nodeName)
         shape = LineShape::fromXml( owner, reader );
+
     if (termTag == nodeName)
         shape = TermShape::fromXml( owner, reader );
 
@@ -163,7 +164,7 @@ void ArcShape::toXml(std::ostream& o) {
 }
 
 ArcShape* ArcShape::fromXml(Symbol* owner, xmlTextReaderPtr reader) {
-    const xmlChar*  lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"ellipse");
+    const xmlChar*  lineTag  = xmlTextReaderConstString(reader, (const xmlChar*)"arc");
     const xmlChar*  nodeName = xmlTextReaderConstLocalName(reader);
     int             nodeType = xmlTextReaderNodeType(reader);
 

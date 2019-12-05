@@ -35,45 +35,44 @@ namespace Netlist {
 
 
 
-  CellWidget::CellWidget ( QWidget* parent )
-    : QWidget(parent)
-    , cell_  (NULL)
-  {
-    setAttribute    ( Qt::WA_OpaquePaintEvent );
-    setAttribute    ( Qt::WA_NoSystemBackground );
-    setAttribute    ( Qt::WA_StaticContents );
-    setSizePolicy   ( QSizePolicy::Expanding, QSizePolicy::Expanding );
-    setFocusPolicy  ( Qt::StrongFocus );
-    setMouseTracking( true );
+CellWidget::CellWidget ( QWidget* parent )
+  : QWidget(parent)
+  , cell_  (NULL) {
+      setAttribute    ( Qt::WA_OpaquePaintEvent );
+      setAttribute    ( Qt::WA_NoSystemBackground );
+      setAttribute    ( Qt::WA_StaticContents );
+      setSizePolicy   ( QSizePolicy::Expanding, QSizePolicy::Expanding );
+      setFocusPolicy  ( Qt::StrongFocus );
+      setMouseTracking( true );
   }
 
 
-  CellWidget::~CellWidget (){ 
+CellWidget::~CellWidget (){ 
 
-  }
-
-
-  void  CellWidget::setCell ( Cell* cell )
-  {
-    cell_ = cell;
-    repaint();
-  }
+}
 
 
-  QSize  CellWidget::minimumSizeHint () const
-  { return QSize(500,500); }
+void  CellWidget::setCell ( Cell* cell ) {
+  cell_ = cell;
+  repaint();
+}
 
 
-  void  CellWidget::resizeEvent ( QResizeEvent* event )
-  { repaint(); }
+QSize  CellWidget::minimumSizeHint () const { 
+  return QSize(500,500); 
+}
 
 
-  void  CellWidget::paintEvent ( QPaintEvent* event )
-  {
-    QFont  bigFont = QFont( "URW Bookman L", 36 );
+void  CellWidget::resizeEvent ( QResizeEvent* event ) { 
+  repaint(); 
+}
 
-    QString cellName = "NULL";
-    if (cell_) cellName = cell_->getName().c_str();
+
+void  CellWidget::paintEvent ( QPaintEvent* event ) {
+  QFont  bigFont = QFont( "URW Bookman L", 36 );
+
+  QString cellName = "NULL";
+  if (cell_) cellName = cell_->getName().c_str();
 
     QPainter painter(this);
     painter.setFont      ( bigFont );
