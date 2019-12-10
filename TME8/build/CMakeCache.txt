@@ -340,7 +340,7 @@ QT_QKRCODECS_PLUGIN_DEBUG:FILEPATH=QT_QKRCODECS_PLUGIN_DEBUG-NOTFOUND
 //Path to a library.
 QT_QKRCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqkrcodecs.so
 
-//Where can the qmake library be found
+//The qmake executable for the Qt installation to use
 QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
 
 //Path to a library.

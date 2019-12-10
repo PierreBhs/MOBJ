@@ -331,6 +331,60 @@ Instance.cpp.s:
 	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/Instance.cpp.s
 .PHONY : Instance.cpp.s
 
+InstancesModel.o: InstancesModel.cpp.o
+
+.PHONY : InstancesModel.o
+
+# target to build an object file
+InstancesModel.cpp.o:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesModel.cpp.o
+.PHONY : InstancesModel.cpp.o
+
+InstancesModel.i: InstancesModel.cpp.i
+
+.PHONY : InstancesModel.i
+
+# target to preprocess a source file
+InstancesModel.cpp.i:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesModel.cpp.i
+.PHONY : InstancesModel.cpp.i
+
+InstancesModel.s: InstancesModel.cpp.s
+
+.PHONY : InstancesModel.s
+
+# target to generate assembly for a file
+InstancesModel.cpp.s:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesModel.cpp.s
+.PHONY : InstancesModel.cpp.s
+
+InstancesWidget.o: InstancesWidget.cpp.o
+
+.PHONY : InstancesWidget.o
+
+# target to build an object file
+InstancesWidget.cpp.o:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesWidget.cpp.o
+.PHONY : InstancesWidget.cpp.o
+
+InstancesWidget.i: InstancesWidget.cpp.i
+
+.PHONY : InstancesWidget.i
+
+# target to preprocess a source file
+InstancesWidget.cpp.i:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesWidget.cpp.i
+.PHONY : InstancesWidget.cpp.i
+
+InstancesWidget.s: InstancesWidget.cpp.s
+
+.PHONY : InstancesWidget.s
+
+# target to generate assembly for a file
+InstancesWidget.cpp.s:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesWidget.cpp.s
+.PHONY : InstancesWidget.cpp.s
+
 Line.o: Line.cpp.o
 
 .PHONY : Line.o
@@ -709,6 +763,60 @@ moc_CellWidget.cxx.s:
 	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_CellWidget.cxx.s
 .PHONY : moc_CellWidget.cxx.s
 
+moc_InstancesModel.o: moc_InstancesModel.cxx.o
+
+.PHONY : moc_InstancesModel.o
+
+# target to build an object file
+moc_InstancesModel.cxx.o:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o
+.PHONY : moc_InstancesModel.cxx.o
+
+moc_InstancesModel.i: moc_InstancesModel.cxx.i
+
+.PHONY : moc_InstancesModel.i
+
+# target to preprocess a source file
+moc_InstancesModel.cxx.i:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesModel.cxx.i
+.PHONY : moc_InstancesModel.cxx.i
+
+moc_InstancesModel.s: moc_InstancesModel.cxx.s
+
+.PHONY : moc_InstancesModel.s
+
+# target to generate assembly for a file
+moc_InstancesModel.cxx.s:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesModel.cxx.s
+.PHONY : moc_InstancesModel.cxx.s
+
+moc_InstancesWidget.o: moc_InstancesWidget.cxx.o
+
+.PHONY : moc_InstancesWidget.o
+
+# target to build an object file
+moc_InstancesWidget.cxx.o:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o
+.PHONY : moc_InstancesWidget.cxx.o
+
+moc_InstancesWidget.i: moc_InstancesWidget.cxx.i
+
+.PHONY : moc_InstancesWidget.i
+
+# target to preprocess a source file
+moc_InstancesWidget.cxx.i:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.i
+.PHONY : moc_InstancesWidget.cxx.i
+
+moc_InstancesWidget.s: moc_InstancesWidget.cxx.s
+
+.PHONY : moc_InstancesWidget.s
+
+# target to generate assembly for a file
+moc_InstancesWidget.cxx.s:
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.s
+.PHONY : moc_InstancesWidget.cxx.s
+
 moc_OpenCellDialog.o: moc_OpenCellDialog.cxx.o
 
 .PHONY : moc_OpenCellDialog.o
@@ -794,6 +902,12 @@ help:
 	@echo "... Instance.o"
 	@echo "... Instance.i"
 	@echo "... Instance.s"
+	@echo "... InstancesModel.o"
+	@echo "... InstancesModel.i"
+	@echo "... InstancesModel.s"
+	@echo "... InstancesWidget.o"
+	@echo "... InstancesWidget.i"
+	@echo "... InstancesWidget.s"
 	@echo "... Line.o"
 	@echo "... Line.i"
 	@echo "... Line.s"
@@ -836,6 +950,12 @@ help:
 	@echo "... moc_CellWidget.o"
 	@echo "... moc_CellWidget.i"
 	@echo "... moc_CellWidget.s"
+	@echo "... moc_InstancesModel.o"
+	@echo "... moc_InstancesModel.i"
+	@echo "... moc_InstancesModel.s"
+	@echo "... moc_InstancesWidget.o"
+	@echo "... moc_InstancesWidget.i"
+	@echo "... moc_InstancesWidget.s"
 	@echo "... moc_OpenCellDialog.o"
 	@echo "... moc_OpenCellDialog.i"
 	@echo "... moc_OpenCellDialog.s"

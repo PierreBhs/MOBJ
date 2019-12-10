@@ -88,6 +88,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellWidget.h"
     "/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellViewer.h"
     "/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/OpenCellDialog.h"
+    "/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h"
+    "/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.h"
     )
 endif()
 

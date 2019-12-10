@@ -27,3 +27,5 @@
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/../install/include/CellWidget.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/../install/include/CellViewer.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/../install/include/OpenCellDialog.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/../install/include/InstancesModel.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/../install/include/InstancesWidget.h

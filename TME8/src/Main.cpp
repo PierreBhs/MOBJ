@@ -36,6 +36,6 @@ void loadCells() {
   Cell::load( "TransistorP" );
   Cell::load( "and2" );
   Cell::load( "or2" );
-  //Cell::load( "xor2" );
+  Cell::load( "xor2" );
   Cell::load( "halfadder" );
 }

@@ -77,9 +77,19 @@ moc_OpenCellDialog.cxx: moc_OpenCellDialog.cxx_parameters
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating moc_OpenCellDialog.cxx"
 	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_OpenCellDialog.cxx_parameters
 
+moc_InstancesModel.cxx: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h
+moc_InstancesModel.cxx: moc_InstancesModel.cxx_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating moc_InstancesModel.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesModel.cxx_parameters
+
+moc_InstancesWidget.cxx: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.h
+moc_InstancesWidget.cxx: moc_InstancesWidget.cxx_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating moc_InstancesWidget.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesWidget.cxx_parameters
+
 CMakeFiles/tme810.dir/Indentation.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Indentation.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Indentation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tme810.dir/Indentation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tme810.dir/Indentation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Indentation.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Indentation.cpp
 
 CMakeFiles/tme810.dir/Indentation.cpp.i: cmake_force
@@ -103,7 +113,7 @@ CMakeFiles/tme810.dir/Indentation.cpp.o.provides.build: CMakeFiles/tme810.dir/In
 
 CMakeFiles/tme810.dir/Term.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Term.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Term.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tme810.dir/Term.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tme810.dir/Term.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Term.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Term.cpp
 
 CMakeFiles/tme810.dir/Term.cpp.i: cmake_force
@@ -127,7 +137,7 @@ CMakeFiles/tme810.dir/Term.cpp.o.provides.build: CMakeFiles/tme810.dir/Term.cpp.
 
 CMakeFiles/tme810.dir/Net.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Net.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tme810.dir/Net.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tme810.dir/Net.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Net.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Net.cpp
 
 CMakeFiles/tme810.dir/Net.cpp.i: cmake_force
@@ -151,7 +161,7 @@ CMakeFiles/tme810.dir/Net.cpp.o.provides.build: CMakeFiles/tme810.dir/Net.cpp.o
 
 CMakeFiles/tme810.dir/Instance.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Instance.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Instance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tme810.dir/Instance.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tme810.dir/Instance.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Instance.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Instance.cpp
 
 CMakeFiles/tme810.dir/Instance.cpp.i: cmake_force
@@ -175,7 +185,7 @@ CMakeFiles/tme810.dir/Instance.cpp.o.provides.build: CMakeFiles/tme810.dir/Insta
 
 CMakeFiles/tme810.dir/Point.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Point.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tme810.dir/Point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tme810.dir/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Point.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Point.cpp
 
 CMakeFiles/tme810.dir/Point.cpp.i: cmake_force
@@ -199,7 +209,7 @@ CMakeFiles/tme810.dir/Point.cpp.o.provides.build: CMakeFiles/tme810.dir/Point.cp
 
 CMakeFiles/tme810.dir/Node.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Node.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tme810.dir/Node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tme810.dir/Node.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Node.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Node.cpp
 
 CMakeFiles/tme810.dir/Node.cpp.i: cmake_force
@@ -223,7 +233,7 @@ CMakeFiles/tme810.dir/Node.cpp.o.provides.build: CMakeFiles/tme810.dir/Node.cpp.
 
 CMakeFiles/tme810.dir/Cell.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Cell.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tme810.dir/Cell.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tme810.dir/Cell.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Cell.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Cell.cpp
 
 CMakeFiles/tme810.dir/Cell.cpp.i: cmake_force
@@ -247,7 +257,7 @@ CMakeFiles/tme810.dir/Cell.cpp.o.provides.build: CMakeFiles/tme810.dir/Cell.cpp.
 
 CMakeFiles/tme810.dir/XmlUtil.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/XmlUtil.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/XmlUtil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tme810.dir/XmlUtil.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tme810.dir/XmlUtil.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/XmlUtil.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/XmlUtil.cpp
 
 CMakeFiles/tme810.dir/XmlUtil.cpp.i: cmake_force
@@ -271,7 +281,7 @@ CMakeFiles/tme810.dir/XmlUtil.cpp.o.provides.build: CMakeFiles/tme810.dir/XmlUti
 
 CMakeFiles/tme810.dir/Main.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Main.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tme810.dir/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tme810.dir/Main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Main.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Main.cpp
 
 CMakeFiles/tme810.dir/Main.cpp.i: cmake_force
@@ -295,7 +305,7 @@ CMakeFiles/tme810.dir/Main.cpp.o.provides.build: CMakeFiles/tme810.dir/Main.cpp.
 
 CMakeFiles/tme810.dir/Box.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Box.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Box.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tme810.dir/Box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tme810.dir/Box.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Box.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Box.cpp
 
 CMakeFiles/tme810.dir/Box.cpp.i: cmake_force
@@ -319,7 +329,7 @@ CMakeFiles/tme810.dir/Box.cpp.o.provides.build: CMakeFiles/tme810.dir/Box.cpp.o
 
 CMakeFiles/tme810.dir/Symbol.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Symbol.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Symbol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tme810.dir/Symbol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/tme810.dir/Symbol.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Symbol.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Symbol.cpp
 
 CMakeFiles/tme810.dir/Symbol.cpp.i: cmake_force
@@ -343,7 +353,7 @@ CMakeFiles/tme810.dir/Symbol.cpp.o.provides.build: CMakeFiles/tme810.dir/Symbol.
 
 CMakeFiles/tme810.dir/Line.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Line.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Line.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tme810.dir/Line.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tme810.dir/Line.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Line.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Line.cpp
 
 CMakeFiles/tme810.dir/Line.cpp.i: cmake_force
@@ -367,7 +377,7 @@ CMakeFiles/tme810.dir/Line.cpp.o.provides.build: CMakeFiles/tme810.dir/Line.cpp.
 
 CMakeFiles/tme810.dir/Shape.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/Shape.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/tme810.dir/Shape.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tme810.dir/Shape.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/Shape.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Shape.cpp
 
 CMakeFiles/tme810.dir/Shape.cpp.i: cmake_force
@@ -391,7 +401,7 @@ CMakeFiles/tme810.dir/Shape.cpp.o.provides.build: CMakeFiles/tme810.dir/Shape.cp
 
 CMakeFiles/tme810.dir/ShapeXML.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/ShapeXML.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/ShapeXML.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tme810.dir/ShapeXML.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/tme810.dir/ShapeXML.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/ShapeXML.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/ShapeXML.cpp
 
 CMakeFiles/tme810.dir/ShapeXML.cpp.i: cmake_force
@@ -415,7 +425,7 @@ CMakeFiles/tme810.dir/ShapeXML.cpp.o.provides.build: CMakeFiles/tme810.dir/Shape
 
 CMakeFiles/tme810.dir/SaveCellDialog.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/SaveCellDialog.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/SaveCellDialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tme810.dir/SaveCellDialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/tme810.dir/SaveCellDialog.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/SaveCellDialog.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/SaveCellDialog.cpp
 
 CMakeFiles/tme810.dir/SaveCellDialog.cpp.i: cmake_force
@@ -439,7 +449,7 @@ CMakeFiles/tme810.dir/SaveCellDialog.cpp.o.provides.build: CMakeFiles/tme810.dir
 
 CMakeFiles/tme810.dir/CellWidget.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/CellWidget.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellWidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/tme810.dir/CellWidget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/tme810.dir/CellWidget.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/CellWidget.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellWidget.cpp
 
 CMakeFiles/tme810.dir/CellWidget.cpp.i: cmake_force
@@ -463,7 +473,7 @@ CMakeFiles/tme810.dir/CellWidget.cpp.o.provides.build: CMakeFiles/tme810.dir/Cel
 
 CMakeFiles/tme810.dir/CellViewer.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/CellViewer.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellViewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/tme810.dir/CellViewer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/tme810.dir/CellViewer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/CellViewer.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellViewer.cpp
 
 CMakeFiles/tme810.dir/CellViewer.cpp.i: cmake_force
@@ -487,7 +497,7 @@ CMakeFiles/tme810.dir/CellViewer.cpp.o.provides.build: CMakeFiles/tme810.dir/Cel
 
 CMakeFiles/tme810.dir/OpenCellDialog.cpp.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/OpenCellDialog.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/OpenCellDialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/tme810.dir/OpenCellDialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/tme810.dir/OpenCellDialog.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/OpenCellDialog.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/OpenCellDialog.cpp
 
 CMakeFiles/tme810.dir/OpenCellDialog.cpp.i: cmake_force
@@ -509,9 +519,57 @@ CMakeFiles/tme810.dir/OpenCellDialog.cpp.o.provides: CMakeFiles/tme810.dir/OpenC
 CMakeFiles/tme810.dir/OpenCellDialog.cpp.o.provides.build: CMakeFiles/tme810.dir/OpenCellDialog.cpp.o
 
 
+CMakeFiles/tme810.dir/InstancesModel.cpp.o: CMakeFiles/tme810.dir/flags.make
+CMakeFiles/tme810.dir/InstancesModel.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/tme810.dir/InstancesModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/InstancesModel.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.cpp
+
+CMakeFiles/tme810.dir/InstancesModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tme810.dir/InstancesModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.cpp > CMakeFiles/tme810.dir/InstancesModel.cpp.i
+
+CMakeFiles/tme810.dir/InstancesModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tme810.dir/InstancesModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.cpp -o CMakeFiles/tme810.dir/InstancesModel.cpp.s
+
+CMakeFiles/tme810.dir/InstancesModel.cpp.o.requires:
+
+.PHONY : CMakeFiles/tme810.dir/InstancesModel.cpp.o.requires
+
+CMakeFiles/tme810.dir/InstancesModel.cpp.o.provides: CMakeFiles/tme810.dir/InstancesModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesModel.cpp.o.provides.build
+.PHONY : CMakeFiles/tme810.dir/InstancesModel.cpp.o.provides
+
+CMakeFiles/tme810.dir/InstancesModel.cpp.o.provides.build: CMakeFiles/tme810.dir/InstancesModel.cpp.o
+
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.o: CMakeFiles/tme810.dir/flags.make
+CMakeFiles/tme810.dir/InstancesWidget.cpp.o: /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/tme810.dir/InstancesWidget.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/InstancesWidget.cpp.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.cpp
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tme810.dir/InstancesWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.cpp > CMakeFiles/tme810.dir/InstancesWidget.cpp.i
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tme810.dir/InstancesWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.cpp -o CMakeFiles/tme810.dir/InstancesWidget.cpp.s
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.o.requires:
+
+.PHONY : CMakeFiles/tme810.dir/InstancesWidget.cpp.o.requires
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.o.provides: CMakeFiles/tme810.dir/InstancesWidget.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/InstancesWidget.cpp.o.provides.build
+.PHONY : CMakeFiles/tme810.dir/InstancesWidget.cpp.o.provides
+
+CMakeFiles/tme810.dir/InstancesWidget.cpp.o.provides.build: CMakeFiles/tme810.dir/InstancesWidget.cpp.o
+
+
 CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o: moc_SaveCellDialog.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_SaveCellDialog.cxx
 
 CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.i: cmake_force
@@ -535,7 +593,7 @@ CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o.provides.build: CMakeFiles/tme810
 
 CMakeFiles/tme810.dir/moc_CellWidget.cxx.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/moc_CellWidget.cxx.o: moc_CellWidget.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/tme810.dir/moc_CellWidget.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/tme810.dir/moc_CellWidget.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_CellWidget.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_CellWidget.cxx
 
 CMakeFiles/tme810.dir/moc_CellWidget.cxx.i: cmake_force
@@ -559,7 +617,7 @@ CMakeFiles/tme810.dir/moc_CellWidget.cxx.o.provides.build: CMakeFiles/tme810.dir
 
 CMakeFiles/tme810.dir/moc_CellViewer.cxx.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/moc_CellViewer.cxx.o: moc_CellViewer.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/tme810.dir/moc_CellViewer.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/tme810.dir/moc_CellViewer.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_CellViewer.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_CellViewer.cxx
 
 CMakeFiles/tme810.dir/moc_CellViewer.cxx.i: cmake_force
@@ -583,7 +641,7 @@ CMakeFiles/tme810.dir/moc_CellViewer.cxx.o.provides.build: CMakeFiles/tme810.dir
 
 CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o: CMakeFiles/tme810.dir/flags.make
 CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o: moc_OpenCellDialog.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_OpenCellDialog.cxx
 
 CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.i: cmake_force
@@ -603,6 +661,54 @@ CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o.provides: CMakeFiles/tme810.dir/m
 .PHONY : CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o.provides
 
 CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o.provides.build: CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o
+
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o: CMakeFiles/tme810.dir/flags.make
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o: moc_InstancesModel.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesModel.cxx
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tme810.dir/moc_InstancesModel.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesModel.cxx > CMakeFiles/tme810.dir/moc_InstancesModel.cxx.i
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tme810.dir/moc_InstancesModel.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesModel.cxx -o CMakeFiles/tme810.dir/moc_InstancesModel.cxx.s
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.requires:
+
+.PHONY : CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.requires
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.provides: CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.requires
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.provides.build
+.PHONY : CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.provides
+
+CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.provides.build: CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o
+
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o: CMakeFiles/tme810.dir/flags.make
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o: moc_InstancesWidget.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o -c /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesWidget.cxx
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesWidget.cxx > CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.i
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesWidget.cxx -o CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.s
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.requires:
+
+.PHONY : CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.requires
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.provides: CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.requires
+	$(MAKE) -f CMakeFiles/tme810.dir/build.make CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.provides.build
+.PHONY : CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.provides
+
+CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.provides.build: CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o
 
 
 # Object files for target tme810
@@ -625,10 +731,14 @@ tme810_OBJECTS = \
 "CMakeFiles/tme810.dir/CellWidget.cpp.o" \
 "CMakeFiles/tme810.dir/CellViewer.cpp.o" \
 "CMakeFiles/tme810.dir/OpenCellDialog.cpp.o" \
+"CMakeFiles/tme810.dir/InstancesModel.cpp.o" \
+"CMakeFiles/tme810.dir/InstancesWidget.cpp.o" \
 "CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o" \
 "CMakeFiles/tme810.dir/moc_CellWidget.cxx.o" \
 "CMakeFiles/tme810.dir/moc_CellViewer.cxx.o" \
-"CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o"
+"CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o" \
+"CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o" \
+"CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o"
 
 # External object files for target tme810
 tme810_EXTERNAL_OBJECTS =
@@ -651,16 +761,20 @@ tme810: CMakeFiles/tme810.dir/SaveCellDialog.cpp.o
 tme810: CMakeFiles/tme810.dir/CellWidget.cpp.o
 tme810: CMakeFiles/tme810.dir/CellViewer.cpp.o
 tme810: CMakeFiles/tme810.dir/OpenCellDialog.cpp.o
+tme810: CMakeFiles/tme810.dir/InstancesModel.cpp.o
+tme810: CMakeFiles/tme810.dir/InstancesWidget.cpp.o
 tme810: CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o
 tme810: CMakeFiles/tme810.dir/moc_CellWidget.cxx.o
 tme810: CMakeFiles/tme810.dir/moc_CellViewer.cxx.o
 tme810: CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o
+tme810: CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o
+tme810: CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o
 tme810: CMakeFiles/tme810.dir/build.make
 tme810: /usr/lib/x86_64-linux-gnu/libQtGui.so
 tme810: /usr/lib/x86_64-linux-gnu/libQtCore.so
 tme810: /usr/lib/x86_64-linux-gnu/libxml2.so
 tme810: CMakeFiles/tme810.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable tme810"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable tme810"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tme810.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -686,10 +800,14 @@ CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/SaveCellDialog.cpp.o.requi
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/CellWidget.cpp.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/CellViewer.cpp.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/OpenCellDialog.cpp.o.requires
+CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/InstancesModel.cpp.o.requires
+CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/InstancesWidget.cpp.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_CellWidget.cxx.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_CellViewer.cxx.o.requires
 CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o.requires
+CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o.requires
+CMakeFiles/tme810.dir/requires: CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o.requires
 
 .PHONY : CMakeFiles/tme810.dir/requires
 
@@ -701,6 +819,8 @@ CMakeFiles/tme810.dir/depend: moc_SaveCellDialog.cxx
 CMakeFiles/tme810.dir/depend: moc_CellWidget.cxx
 CMakeFiles/tme810.dir/depend: moc_CellViewer.cxx
 CMakeFiles/tme810.dir/depend: moc_OpenCellDialog.cxx
+CMakeFiles/tme810.dir/depend: moc_InstancesModel.cxx
+CMakeFiles/tme810.dir/depend: moc_InstancesWidget.cxx
 	cd /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/CMakeFiles/tme810.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tme810.dir/depend
 

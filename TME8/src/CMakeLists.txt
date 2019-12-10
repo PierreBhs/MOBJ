@@ -36,6 +36,8 @@ include(${QT_USE_FILE})
                                       CellWidget.h
                                       CellViewer.h
                                       OpenCellDialog.h
+                                      InstancesModel.h
+                                      InstancesWidget.h
                        )
 
                     set( cpps         Indentation.cpp
@@ -56,6 +58,8 @@ include(${QT_USE_FILE})
                                       CellWidget.cpp
                                       CellViewer.cpp
                                       OpenCellDialog.cpp
+                                      InstancesModel.cpp
+                                      InstancesWidget.cpp
                        )
 
 qt4_wrap_cpp( mocCpps  ${mocIncludes} )

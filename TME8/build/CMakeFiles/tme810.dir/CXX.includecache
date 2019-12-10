@@ -14,6 +14,14 @@
 ../src/CellWidget.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellWidget.h
 
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesModel.cxx
+../src/InstancesModel.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h
+
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_InstancesWidget.cxx
+../src/InstancesWidget.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.h
+
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/build/moc_OpenCellDialog.cxx
 ../src/OpenCellDialog.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/OpenCellDialog.h
@@ -165,6 +173,42 @@ Point.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Point.h
 XmlUtil.h
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/XmlUtil.h
+
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.cpp
+InstancesModel.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h
+
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h
+QAbstractTableModel
+-
+QModelIndex
+-
+QVariant
+-
+Cell.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Cell.h
+Instance.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Instance.h
+
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.cpp
+InstancesWidget.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.h
+
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesWidget.h
+QWidget
+-
+QTableView
+-
+QHeaderView
+-
+QPushButton
+-
+CellViewer.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/CellViewer.h
+Cell.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Cell.h
+InstancesModel.h
+/home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/InstancesModel.h
 
 /home/pierre/Documents/Master/M1/MOBJ/MOBJ/TME8/src/Line.cpp
 XmlUtil.h
@@ -646,6 +690,10 @@ iterator
 list
 -
 
+/usr/include/qt4/QtCore/QAbstractTableModel
+qabstractitemmodel.h
+/usr/include/qt4/QtCore/qabstractitemmodel.h
+
 /usr/include/qt4/QtCore/QDate
 qdatetime.h
 /usr/include/qt4/QtCore/qdatetime.h
@@ -653,6 +701,10 @@ qdatetime.h
 /usr/include/qt4/QtCore/QList
 qlist.h
 /usr/include/qt4/QtCore/qlist.h
+
+/usr/include/qt4/QtCore/QModelIndex
+qabstractitemmodel.h
+/usr/include/qt4/QtCore/qabstractitemmodel.h
 
 /usr/include/qt4/QtCore/QObject
 qobject.h
@@ -669,6 +721,10 @@ qpoint.h
 /usr/include/qt4/QtCore/QRect
 qrect.h
 /usr/include/qt4/QtCore/qrect.h
+
+/usr/include/qt4/QtCore/QVariant
+qvariant.h
+/usr/include/qt4/QtCore/qvariant.h
 
 /usr/include/qt4/QtCore/QtCore
 qalgorithms.h
@@ -2148,6 +2204,10 @@ qfont.h
 qboxlayout.h
 /usr/include/qt4/QtGui/qboxlayout.h
 
+/usr/include/qt4/QtGui/QHeaderView
+qheaderview.h
+/usr/include/qt4/QtGui/qheaderview.h
+
 /usr/include/qt4/QtGui/QLabel
 qlabel.h
 /usr/include/qt4/QtGui/qlabel.h
@@ -2203,6 +2263,10 @@ qpushbutton.h
 /usr/include/qt4/QtGui/QResizeEvent
 qevent.h
 /usr/include/qt4/QtGui/qevent.h
+
+/usr/include/qt4/QtGui/QTableView
+qtableview.h
+/usr/include/qt4/QtGui/qtableview.h
 
 /usr/include/qt4/QtGui/QTransform
 qtransform.h
