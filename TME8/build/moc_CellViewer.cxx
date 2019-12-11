@@ -22,7 +22,7 @@ static const uint qt_meta_data_CellViewer[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,13 +33,16 @@ static const uint qt_meta_data_CellViewer[] = {
       12,   11,   11,   11, 0x0a,
       27,   11,   11,   11, 0x0a,
       38,   11,   11,   11, 0x0a,
+      49,   11,   11,   11, 0x0a,
+      64,   11,   11,   11, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_CellViewer[] = {
     "CellViewer\0\0setCell(Cell*)\0saveCell()\0"
-    "openCell()\0"
+    "openCell()\0showCellsLib()\0"
+    "showInstancesWidget()\0"
 };
 
 void CellViewer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -51,6 +54,8 @@ void CellViewer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->setCell((*reinterpret_cast< Cell*(*)>(_a[1]))); break;
         case 1: _t->saveCell(); break;
         case 2: _t->openCell(); break;
+        case 3: _t->showCellsLib(); break;
+        case 4: _t->showInstancesWidget(); break;
         default: ;
         }
     }
@@ -88,9 +93,9 @@ int CellViewer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

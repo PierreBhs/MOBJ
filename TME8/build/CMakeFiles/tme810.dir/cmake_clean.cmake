@@ -1,10 +1,12 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "moc_SaveCellDialog.cxx"
   "moc_CellWidget.cxx"
   "moc_CellViewer.cxx"
   "moc_OpenCellDialog.cxx"
   "moc_InstancesModel.cxx"
   "moc_InstancesWidget.cxx"
+  "moc_CellsModel.cxx"
+  "moc_CellsLib.cxx"
   "CMakeFiles/tme810.dir/Indentation.cpp.o"
   "CMakeFiles/tme810.dir/Term.cpp.o"
   "CMakeFiles/tme810.dir/Net.cpp.o"
@@ -25,17 +27,23 @@ file(REMOVE_RECURSE
   "CMakeFiles/tme810.dir/OpenCellDialog.cpp.o"
   "CMakeFiles/tme810.dir/InstancesModel.cpp.o"
   "CMakeFiles/tme810.dir/InstancesWidget.cpp.o"
+  "CMakeFiles/tme810.dir/CellsModel.cpp.o"
+  "CMakeFiles/tme810.dir/CellsLib.cpp.o"
   "CMakeFiles/tme810.dir/moc_SaveCellDialog.cxx.o"
   "CMakeFiles/tme810.dir/moc_CellWidget.cxx.o"
   "CMakeFiles/tme810.dir/moc_CellViewer.cxx.o"
   "CMakeFiles/tme810.dir/moc_OpenCellDialog.cxx.o"
   "CMakeFiles/tme810.dir/moc_InstancesModel.cxx.o"
   "CMakeFiles/tme810.dir/moc_InstancesWidget.cxx.o"
+  "CMakeFiles/tme810.dir/moc_CellsModel.cxx.o"
+  "CMakeFiles/tme810.dir/moc_CellsLib.cxx.o"
   "tme810.pdb"
   "tme810"
+  "tme810.pdb"
+  "CMakeFiles/CMakeRelink.dir/tme810"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
-  include(CMakeFiles/tme810.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/tme810.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

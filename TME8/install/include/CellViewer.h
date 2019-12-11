@@ -1,10 +1,20 @@
+#pragma once
+
 #include <QMainWindow>
 #include "CellWidget.h"
 #include "SaveCellDialog.h"
 #include "OpenCellDialog.h"
 #include "Cell.h"
+#include "InstancesWidget.h"
+#include "InstancesModel.h"
+#include "CellsLib.h"
+#include "CellsModel.h"
 
 using namespace Netlist;
+
+class CellsLib;
+
+class InstancesWidget;
 
 class CellViewer : public QMainWindow {
     Q_OBJECT;
@@ -17,12 +27,12 @@ class CellViewer : public QMainWindow {
             void      setCell             ( Cell* );
             void      saveCell            ();
             void      openCell            ();
-     //       void      showCellsLib        ();  // TME9+.
-      //      void      showInstancesWidget ();  // TME9+.
+            void      showCellsLib        ();  // TME9+.
+            void      showInstancesWidget ();  // TME9+.
   private:
     CellWidget*      cellWidget_;
-    //CellsLib*        cellsLib_;         // TME9+.
-    //InstancesWidget* instancesWidget_;  // TME9+.
+    CellsLib*        cellsLib_;         // TME9+.
+    InstancesWidget* instancesWidget_;  // TME9+.
     SaveCellDialog*  saveCellDialog_;
     OpenCellDialog*  openCellDialog_;
     std::vector<Cell*> cells_;

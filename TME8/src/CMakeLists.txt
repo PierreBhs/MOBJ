@@ -38,6 +38,8 @@ include(${QT_USE_FILE})
                                       OpenCellDialog.h
                                       InstancesModel.h
                                       InstancesWidget.h
+                                      CellsModel.h
+                                      CellsLib.h
                        )
 
                     set( cpps         Indentation.cpp
@@ -60,9 +62,11 @@ include(${QT_USE_FILE})
                                       OpenCellDialog.cpp
                                       InstancesModel.cpp
                                       InstancesWidget.cpp
+                                      CellsModel.cpp
+                                      CellsLib.cpp
                        )
 
-qt4_wrap_cpp( mocCpps  ${mocIncludes} )
+qt4_wrap_cpp(mocCpps  ${mocIncludes})
 
         add_executable (tme810  ${cpps} ${mocCpps} )
         target_link_libraries ( tme810  ${QT_LIBRARIES} ${LIBXML2_LIBRARIES} )

@@ -1,10 +1,11 @@
 #include "CellViewer.h"
-#include "CellWidget.h"
 
 using namespace Netlist;
 
 CellViewer::CellViewer( QWidget * parent ): QMainWindow(parent), cellWidget_(NULL), saveCellDialog_(NULL), cells_() {
     cellWidget_     = new CellWidget();
+    instancesWidget_= new InstancesWidget();
+    cellsLib_       = new CellsLib();
     saveCellDialog_ = new SaveCellDialog(this);
     openCellDialog_ = new OpenCellDialog(this);
     setCentralWidget(cellWidget_);
@@ -26,6 +27,20 @@ CellViewer::CellViewer( QWidget * parent ): QMainWindow(parent), cellWidget_(NUL
     fileMenu->addAction(action);
     connect(action , SIGNAL(triggered()) , this, SLOT(openCell()));
 
+    action = new QAction("Instances", this);
+    action->setStatusTip("Tableau d'instances");
+    action->setShortcut(QKeySequence("CTRL+I"));
+    action->setVisible(true);
+    fileMenu->addAction(action);
+    connect(action, SIGNAL(triggered()), this, SLOT(showInstancesWidget()));
+
+    action = new QAction("Cells", this);
+    action->setStatusTip("Big titties no milk");
+    action->setShortcut(QKeySequence("CTRL+L"));
+    action->setVisible(true);
+    fileMenu->addAction(action);
+    connect(action, SIGNAL(triggered()), this, SLOT(showCellsLib()));
+
     action = new QAction( "Quit", this);
     action->setStatusTip( "Exit the Netlist Viewer " );
     action->setShortcut(QKeySequence("CTRL+Q"));
@@ -33,6 +48,8 @@ CellViewer::CellViewer( QWidget * parent ): QMainWindow(parent), cellWidget_(NUL
     fileMenu->addAction( action );
     connect( action , SIGNAL(triggered ()) , this, SLOT(close()));
     // Fin Menu Bar File
+
+    setWindowTitle(tr("SESIISES"));
 }
 
 CellViewer::~CellViewer() {
@@ -53,9 +70,20 @@ void  CellViewer::openCell() {
     if (openCellDialog_->run(cellStr)) {
         if(!(cell = Cell::find(cellStr)))
             cell = Cell::load(cellStr);
-
+        //emit CellLoaded();
         this->setCell(cell);     
     }
+}
+
+void CellViewer::showInstancesWidget() {
+    instancesWidget_->setCellViewer(this);
+    instancesWidget_->setCell(getCell());
+    instancesWidget_->show();
+
+}
+
+void CellViewer::showCellsLib() {
+    cellsLib_->show();
 }
 
 // Sauvegarde la cell
