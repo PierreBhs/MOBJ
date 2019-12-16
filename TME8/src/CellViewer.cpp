@@ -83,6 +83,7 @@ void CellViewer::showInstancesWidget() {
 }
 
 void CellViewer::showCellsLib() {
+    cellsLib_->setCellViewer(this);
     cellsLib_->show();
 }
 

@@ -4,6 +4,7 @@
 #include <QVBoxLayout>
 #include <QPixmap>
 #include <QLabel>
+#include <iostream>
 
 CellsLib::CellsLib(QWidget* parent): QWidget(parent), cellViewer_(NULL), baseModel_(new CellsModel(this)), 
     view_(new QTableView(this)), load_(new QPushButton(this)) { 
@@ -62,5 +63,6 @@ void CellsLib::load() {
     int selectedRow = getSelectedRow();
     if (selectedRow < 0)  
         return;
+        
     cellViewer_->setCell(baseModel_->getModel(selectedRow));
 }

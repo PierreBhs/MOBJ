@@ -46,7 +46,8 @@ inline const std::string&         Instance::getName()       const { return name_
 inline Cell*                      Instance::getMasterCell() const { return masterCell_; }
 inline Cell*                      Instance::getCell()       const { return owner_; }
 inline const std::vector<Term*>&  Instance::getTerms()      const { return terms_;}
-
+inline Point                      Instance::getPosition()   const { return position_;}
+ 
 }
 
 #endif

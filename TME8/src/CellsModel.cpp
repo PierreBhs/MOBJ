@@ -5,12 +5,9 @@
 
 using namespace Netlist;
 
-std::vector<Cell*>& cellsCModel = Cell::getAllCells();
 
 
-CellsModel::CellsModel(QObject* parent): QAbstractTableModel(parent), cell_(NULL) { 
-    std::cout << cellsCModel[0]->getName() << std::endl;
-    std::cout << cellsCModel.size()   << std::endl;
+CellsModel::CellsModel(QObject* parent): QAbstractTableModel(parent), cell_(NULL), cellsCModel(Cell::getAllCells()){ 
 
 }
 
@@ -18,11 +15,11 @@ CellsModel::~CellsModel() {
 
 }
 
-void CellsModel::setCell(Cell* cell) { 
+/* void CellsModel::setCell(Cell* cell) { 
     emit layoutAboutToBeChanged(); // emmission d'un signal Qt (lABTBC est un signal). Attention, stop le rafraichissment, je change ce que tu dois afficher 
     cell_ = cell;
     emit layoutChanged();          // Signale que les données sont stables, puis rafraichis toi (il faut les relire)
-}
+} */
 
 
 // Permettent de dimensionner le tableau à afficher
@@ -39,6 +36,7 @@ int CellsModel::columnCount(const QModelIndex& parent) const {
 // Renvoie une "information" (type spécifié par role) pour une cellule du tableau (index)
 QVariant CellsModel::data(const QModelIndex& index, int  role ) const {
     
+
     if (/*not cell_ or */not index.isValid())
         return  QVariant();
 
@@ -74,11 +72,13 @@ QVariant CellsModel::headerData(int section, Qt::Orientation orientation, int ro
 
 
 Cell* CellsModel::getModel(int row) {
-    if(not cell_) 
+    /* if(not cell_) {
+        std::cout << "nul comme quentin\n";
         return  nullptr;
-    if(row >= (int)cell_->getInstances().size())  
+    } */
+    if(row >= (int)cellsCModel.size())  
         return  nullptr;
     
-    return  cell_;
+    return  cellsCModel[row];
 }
 
