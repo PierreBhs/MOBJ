@@ -117,7 +117,9 @@ public:
                      ~ArcShape        ();
     void             toXml            (std::ostream&);          
     static ArcShape* fromXml          ( Symbol*, xmlTextReaderPtr);
-    Box              getBoundingBox   ()  const;
+    Box              getBoundingBox   () const;
+    inline int       getStart         () const;
+    inline int       getSpan          () const;
 private:
     Box box_;
     int start_;
@@ -125,6 +127,8 @@ private:
 
 };
 
+inline int ArcShape::getStart           () const { return start_;}
+inline int ArcShape::getSpan           () const { return span_;}
 }
 
 

@@ -15,7 +15,7 @@ public:
                 ~CellsModel  ();
 
     // Nos méthodes
-    //void        setCell          (Cell*);
+    void        setCell          (Cell*);
     Cell*       getModel         (int row);
 
     // Méthodes à surcharger car elles sont héritées de QAbstractModel

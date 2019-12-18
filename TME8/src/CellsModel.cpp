@@ -15,11 +15,11 @@ CellsModel::~CellsModel() {
 
 }
 
-/* void CellsModel::setCell(Cell* cell) { 
+void CellsModel::setCell(Cell* cell) { 
     emit layoutAboutToBeChanged(); // emmission d'un signal Qt (lABTBC est un signal). Attention, stop le rafraichissment, je change ce que tu dois afficher 
     cell_ = cell;
     emit layoutChanged();          // Signale que les données sont stables, puis rafraichis toi (il faut les relire)
-} */
+}
 
 
 // Permettent de dimensionner le tableau à afficher
@@ -36,7 +36,8 @@ int CellsModel::columnCount(const QModelIndex& parent) const {
 // Renvoie une "information" (type spécifié par role) pour une cellule du tableau (index)
 QVariant CellsModel::data(const QModelIndex& index, int  role ) const {
     
-
+    cellsCModel = Cell::getAllCells();
+    std::vector<Cell*>& cellss = Cell::getAllCells();
     if (/*not cell_ or */not index.isValid())
         return  QVariant();
 
@@ -49,7 +50,7 @@ QVariant CellsModel::data(const QModelIndex& index, int  role ) const {
         //int row = index.row();
         switch(col) {
             case 0:  
-                return cellsCModel[row]->getName().c_str();
+                return cellss[row]->getName().c_str();
         }
     }
     return QVariant();
