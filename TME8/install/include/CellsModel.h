@@ -23,6 +23,9 @@ public:
     int         columnCount      (const QModelIndex& parent=QModelIndex ()) const; 
     QVariant    data             (const QModelIndex& index , int  role=Qt:: DisplayRole) const; // QVariant -> encapsule tous les types plus ou moins standards, conteneur multiforme
     QVariant    headerData       (int section, Qt::Orientation orientation, int role=Qt:: DisplayRole ) const;
+
+public slots:
+    void        updateCellModelData();
     
 private:
     Cell* cell_;

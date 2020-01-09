@@ -55,6 +55,7 @@ public:
     inline  Term*       getTerm          () const;
     inline  int         getX             () const;
     inline  int         getY             () const;
+    inline  NameAlign   getAlign         () const;
     static  std::string alignToString    (NameAlign);
     static  NameAlign   stringToAlign    (std::string);
             void        toXml            (std::ostream&);
@@ -68,7 +69,7 @@ private:
 inline Term*     TermShape::getTerm          () const { return term_; }
 inline  int      TermShape::getX             () const { return x_; }
 inline  int      TermShape::getY             () const { return y_; }
-
+inline TermShape::NameAlign TermShape::getAlign         () const { return align_; }
 
 ///////// LineShape /////////
 class LineShape : public Shape {
@@ -127,7 +128,7 @@ private:
 
 };
 
-inline int ArcShape::getStart           () const { return start_;}
+inline int ArcShape::getStart          () const { return start_;}
 inline int ArcShape::getSpan           () const { return span_;}
 }
 

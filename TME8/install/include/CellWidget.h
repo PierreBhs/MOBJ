@@ -8,6 +8,8 @@
 #include <QPoint>
 #include <QMenuBar>
 #include <QAction>
+#include <QPen>
+
 class QPainter;
 #include "Box.h"
 
@@ -35,7 +37,7 @@ namespace Netlist {
       inline  int     screenYToY          (int) const;
       virtual QSize   minimumSizeHint     () const;
       virtual void    resizeEvent         (QResizeEvent*);
-              void    query               (unsigned int, QPainter&);
+              void    query               (unsigned int, QPainter&, QPen&);
 
     protected:
       virtual void    paintEvent          (QPaintEvent*);
@@ -56,7 +58,7 @@ namespace Netlist {
   inline int    CellWidget::screenXToX          ( int x )          const {return x + viewport_.getX1();}
   inline int    CellWidget::screenYToY          ( int y )          const {return viewport_.getY2() - y;}
   inline QRect  CellWidget::boxToScreenRect     (const Box&    b)  const {return QRect(xToScreenX(b.getX1()), yToScreenY(b.getY2()), b.getWidth(), b.getHeight());}
-  inline QPoint CellWidget::pointToScreenPoint  (const Point&  p)  const {return QPoint(screenXToX(p.getX()), yToScreenY(p.getY()));}
+  inline QPoint CellWidget::pointToScreenPoint  (const Point&  p)  const {return QPoint(xToScreenX(p.getX()), yToScreenY(p.getY()));}
   inline Box    CellWidget::screenRectToBox     (const QRect&  r)  const {return Box(screenXToX(r.x()), screenYToY(r.y()), screenXToX(r.x()+r.width()), screenYToY(r.y()+r.height()));} 
   inline Point  CellWidget::screenPointToPoint  (const QPoint& p)  const {return Point(screenYToY(p.x()), screenYToY(p.y()));}
   
